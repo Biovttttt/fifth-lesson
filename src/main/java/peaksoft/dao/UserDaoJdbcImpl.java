@@ -55,7 +55,7 @@ public class UserDaoJdbcImpl  implements UserDao {
             preparedStatement.setByte(3,age);
             preparedStatement.executeUpdate();
 
-            System.out.println("User успешно сохранено");
+            System.out.println("User: "+ name + " успешно сохранено");
         } catch (SQLException e) {
             e.printStackTrace();
         }

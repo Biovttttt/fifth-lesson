@@ -28,10 +28,8 @@ public class UserServiceImpl extends UserDaoHibernateImpl implements UserService
         super.dropUsersTable();
     }
 
-    @Override
-    public void saveUser(String name, String lastName, byte age) {
 
-    }
+
 
     @Override
     public void saveUser(User user) {

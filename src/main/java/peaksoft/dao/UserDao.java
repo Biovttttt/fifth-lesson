@@ -11,7 +11,9 @@ public interface UserDao {
 
     void dropUsersTable() throws SQLException;
 
-    void saveUser(String name, String lastName, byte age);
+    void saveUser(User user);
+
+     User UpdateUser(long id,String name,String surname,byte age);
 
     void removeUserById(long id);
 
